@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <servlet>
+        <servlet-name>ConnServlet</servlet-name>
+        <servlet-class>iot.controller.ConnServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>productsServlet</servlet-name>
+        <servlet-class>iot.controller.productsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>connServlet</servlet-name>
+        <servlet-class>iot.controller.connServlet</servlet-class>
+    </servlet>
+    
+    
+    <servlet>
+        <servlet-name>addProductServlet</servlet-name>
+        <servlet-class>iot.controller.addProductServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>productDeleteServlet</servlet-name>
+        <servlet-class>iot.controller.productDeleteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>productSearchServlet</servlet-name>
+        <servlet-class>iot.controller.productSearchServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>editProductServlet</servlet-name>
+        <servlet-class>iot.controller.editProductServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>updateProductServlet</servlet-name>
+        <servlet-class>iot.controller.updateProductServlet</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>productServlet</servlet-name>
+        <url-pattern>/productServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ConnServlet</servlet-name>
+        <url-pattern>/ConnServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>productsServlet</servlet-name>
+        <url-pattern>/productsServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>connServlet</servlet-name>
+        <url-pattern>/connServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>addProductServlet</servlet-name>
+        <url-pattern>/addProductServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>productDeleteServlet</servlet-name>
+        <url-pattern>/productDeleteServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>productSearchServlet</servlet-name>
+        <url-pattern>/productSearchServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>editProductServlet</servlet-name>
+        <url-pattern>/editProductServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>updateProductServlet</servlet-name>
+        <url-pattern>/updateProductServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
